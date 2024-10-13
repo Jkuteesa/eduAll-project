@@ -12,34 +12,36 @@ body {
     background-color: #0093E9;
     padding: 15px 20px;
     text-align:right;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.navbar ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: white;
+/* nav{
     text-decoration: none;
+    text-align: right;
+    margin: 0 0px;
+} */
+ 
+/* .logo{
+    text-align: left;
+    padding: 0px;
+    margin: 0;
+} */
+
+nav a{
+    text-decoration: none;
+    padding: 20px;
     font-size: 18px;
+    color: white;
     transition: color 0.3s ease;
 }
-
-.navbar ul li a:hover {
+nav a:hover {
     color: #FFA500;
 }
 
 /* Banner */
 .banner {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 400px;
     overflow: hidden;
@@ -190,3 +192,96 @@ p {
     opacity: 0.9;
     transition: opacity 0.3s ease;
 }
+
+/* form styling */
+/* ... (previous styles remain unchanged) ... */
+
+/* Contact Form Container */
+.contact-container {
+    display: flex;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.contact-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 40px;
+    background-color: #FFFFFF;
+}
+
+.contact-form h3 {
+    color: #0093E9;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #FF8C00;
+}
+
+/* Responsive Design for Contact Form */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-image {
+        display: none; /* Hide image on small screens to save space */
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+/* ... (rest of the styles remain unchanged) ... */
