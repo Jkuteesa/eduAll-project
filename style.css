@@ -21,7 +21,7 @@ body {
     text-align: right;
     margin: 0 0px;
 } */
- 
+
 /* .logo{
     text-align: left;
     padding: 0px;
@@ -39,7 +39,7 @@ nav a:hover {
     color: #FFA500;
 }
 
-/* Banner */
+/* Banners */
 .banner {
     /* position: relative; */
     width: 100%;
@@ -57,7 +57,7 @@ nav a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* to perfectly centre an element within a container*/
     text-align: center;
     background-color: rgba(0, 147, 233, 0.8); /* Semi-transparent blue */
     padding: 20px;
@@ -175,7 +175,7 @@ footer {
     }
 }
 
-/* Additional Aesthetic Enhancements */
+/* more css changes */
 h2 {
     color: #0093E9;
     border-bottom: 2px solid #FFA500;
@@ -285,3 +285,24 @@ p {
 }
 
 /* ... (rest of the styles remain unchanged) ... */
+
+
+.contact-info {
+    margin-bottom: 30px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.social-links {
+    margin-top: 20px;
+}
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #0093E9;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: #FFA500;
+}
